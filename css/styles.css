@@ -25,7 +25,6 @@ main {
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 12%);
-    width: 20vw;
     height: min-content;
     border-radius: 10px;
     gap: 10px;
@@ -54,7 +53,7 @@ h4 {
 
 p{
     font-weight: 400;
-    font-size: smaller;
+    font-size: normal;
 }
 
 .seccion-info-personal h4 {
@@ -91,18 +90,17 @@ button {
     font-weight: 700;
  }    
 
- /*Estilos responsivos*/
-
- /*Teléfonos en vertical*/
- @media (max-width:480px) {
+/*****************************************************
+            Estilos responsivos
+*****************************************************/
+@media (max-width: 425px) {
     main {
-        padding: 20px 0px 5px;
-        width: 100vw;
-        height: min-content;
+        width: 85vw;
     }
+
     #img-perfil {
-        width: 90px;
-        margin: 0px 0px 15px;
+        width: 100px;
+        margin-bottom: 20px;
     }
     .seccion-info-personal h2 {
         font-size: 24px;
@@ -116,53 +114,76 @@ button {
     button {
         padding: 15px 0px;
         margin: 3px;
-        font-weight: bold;
+        font-weight: 600;
     }
  }
 
  /*Teléfonos en horizontal o tablets en vertical*/
- @media (max-width:768px) {
+ @media (min-width:426px) and (max-width: 768px) {
     main {
-        padding: 50px 0px 20px;
-        width: 80vw;
-        height: min-content;
+        width: 60vw;
     }
+
     #img-perfil {
-        width: 150px;
-        margin: 10px 0px 15px;
+        width: 95px;
+        margin-bottom: 20px;
     }
     .seccion-info-personal h2 {
-        font-size: 28px;
+        font-size: 25px;
         font-weight: 600;
     }
 
-    .seccion-info-personal p {
-        font-size: 16px;
-    }
-
     button {
         padding: 15px 0px;
         margin: 3px;
-        font-weight: bold;
-        font-weight: 20px;
+        font-weight: 600;
     }
  }
 
- @media (min-width:1024px) {
+ @media (min-width: 769px) and (min-width:1024px) {
     main {
-        padding: 25px 0px 10px;
-        width: 25vw;
-        height: min-content;
+        width: 45vw;
     }
+
     #img-perfil {
-        width: 100px;
-        margin: 10px 0px 10px;
+        width: 90px;
+        margin-bottom: 20px;
+    }
+    .seccion-info-personal h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .seccion-info-personal p {
+        font-size: normal;
+        font-weight: 400px;
     }
 
     button {
         padding: 15px 0px;
         margin: 3px;
-        font-weight: bold;
-        font-weight: 15px;
+        font-weight: 700;
+    }
+ }
+
+ @media (min-width:1025px) and (max-width: 1440px) {
+    main {
+        width: 30vw;
+    }
+
+    #img-perfil {
+        width: 85px;
+        margin-bottom: 15px;
+    }
+   
+    button {
+        padding: 15px 0px;
+        margin: 3px;
+        font-weight: 700;
+    }
+ }
+
+ @media (min-width: 1441px) {
+    main {
+        width: 20vw;
     }
  }
